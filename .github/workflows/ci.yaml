@@ -1,0 +1,21 @@
+name: ci-wf
+on:
+  push:
+   branches:
+     - develop
+  pull_request:
+    branches:
+    - develop
+jobs:
+  linting-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: welcome Message
+        run: echo "Welcome to CI Pipeline"
+      - name: Clone The Repository
+        uses: actions/checkout@v4
+      
+
+
+
+  
